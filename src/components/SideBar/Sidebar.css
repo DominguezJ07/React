@@ -1,0 +1,50 @@
+/* ===== Contenedor principal del sidebar ===== */
+.sidebar {
+  position: fixed;                 /* Fija el sidebar en pantalla, no se mueve al hacer scroll */
+  top: 60px;                       /* Lo coloca justo debajo del header (que mide 60px de alto) */
+  left: 0;                         /* Pegado al borde izquierdo de la pantalla */
+  width: 200px;                    /* Ancho fijo del sidebar */
+  height: calc(100% - 60px);       /* Ocupa toda la altura de la pantalla menos el header */
+  background-color: #2c3e50;       /* Color de fondo oscuro para el sidebar */
+  padding-top: 1rem;               /* Espacio superior interno */
+  box-sizing: border-box;         /* Incluye padding dentro del ancho/alto total */
+  z-index: 900;                    /* Se asegura de que el sidebar quede detrás del header (si este tiene z-index más alto) */
+}
+
+/* ===== Estilos para la lista del menú de navegación ===== */
+.sidebar nav ul {
+  list-style: none;               /* Elimina los bullets (viñetas) de la lista */
+  padding: 0;                     /* Quita el padding predeterminado */
+  margin: 0;                      /* Quita el margen predeterminado */
+}
+
+/* ===== Estilos para cada ítem de la lista ===== */
+.sidebar nav ul li {
+  padding: 12px 20px;             /* Espaciado interno arriba/abajo: 12px, izquierda/derecha: 20px */
+  cursor: pointer;                /* Cambia el cursor a una mano al pasar por encima */
+  transition: background-color 0.3s ease; /* Suaviza la transición del fondo al hacer hover */
+}
+
+/* ===== Color de fondo al pasar el mouse por encima del ítem ===== */
+.sidebar nav ul li:hover {
+  background-color: #34495e;      /* Fondo un poco más claro cuando se hace hover */
+}
+
+/* ===== Estilos para el enlace dentro de cada ítem ===== */
+.sidebar nav ul li a {
+  color: white;                   /* Texto blanco para el enlace */
+  text-decoration: none;          /* Elimina el subrayado del enlace */
+  display: block;                 /* El enlace ocupa todo el espacio del ítem (mejor para hacer clic) */
+  font-size: 16px;                /* Tamaño de letra del enlace */
+}
+
+/* ===== Estilo especial para el ítem activo (seleccionado) ===== */
+.sidebar nav ul li.active {
+  background-color: #3498db;      /* Fondo azul para el ítem activo */
+  border-left: 4px solid #2980b9; /* Línea azul más oscura en el borde izquierdo */
+}
+
+/* ===== Estilo extra para el texto del enlace activo ===== */
+.sidebar nav ul li.active a {
+  font-weight: bold;              /* Texto en negrita para destacar el ítem activo */
+}

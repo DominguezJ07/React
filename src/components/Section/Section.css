@@ -1,0 +1,32 @@
+/* ===== Estilos para el contenedor de tarjetas (section) ===== */
+section {
+  padding: 10px;                    /* Espacio interno de 10px alrededor del contenido */
+  background-color: aqua;          /* Color de fondo del contenedor section */
+  display: flex;                   /* Activa el modelo de caja flexible (flexbox) */
+  gap: 20px;                       /* Espacio entre cada tarjeta */
+  justify-content: center;        /* Centra horizontalmente las tarjetas */
+  margin-left: 220px;             /* Deja espacio a la izquierda para el Sidebar (ajustable según ancho real) */
+}
+
+/* ===== Estilos para cada tarjeta individual ===== */
+.card {
+  font-family: inherit, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* Usa la fuente heredada o una de respaldo, en orden de prioridad */
+
+  width: 200px;                    /* Ancho fijo de la tarjeta */
+  height: 400px;                   /* Alto fijo de la tarjeta */
+  text-align: center;              /* Centra el texto dentro de la tarjeta */
+  box-shadow: 0 4px 8px #ff00ff;   /* Aplica sombra rosada alrededor para efecto de profundidad */
+  background-color: blueviolet;    /* Color de fondo morado para la tarjeta */
+
+  /*  Estas propiedades solo funcionan si se agrega display: flex a .card */
+  align-items: center;             /* Centrado vertical de contenido si fuera un contenedor flex */
+  gap: 20px;                       /* Espaciado entre elementos hijos si se usa flex */
+  justify-content: space-between; /* Distribuye espacio entre hijos si se usa flex */
+}
+
+/* ===== Estilos para la imagen dentro de cada tarjeta ===== */
+.image {
+  width: 200px;       /* Ancho fijo de la imagen */
+  height: 200px;      /* Alto fijo de la imagen */
+}
