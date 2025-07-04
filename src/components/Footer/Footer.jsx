@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <p>© 2025 Mi Proyecto con React y Hooks</p>
+      <p>© 2025 Julian Andres Dominguez</p>
     </footer>
   );
 };

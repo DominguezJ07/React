@@ -16,7 +16,7 @@ export const UserCard = ({ user }) => {
     setIsContacted(!isContacted);
 
     // Muestra en consola un mensaje indicando que se interactuó con la tarjeta
-    console.log(`Tarjeta de ${name} fue renderizada`);
+    console.log(`Diste like a la tarjeta ${name} `);
   };
 
   // JSX que define la estructura visual de la tarjeta
@@ -33,7 +33,7 @@ export const UserCard = ({ user }) => {
 
       {/* Botón que cambia su texto al ser presionado */}
       <button id={id} onClick={handleClick}>
-        {isContacted ? 'Contactado' : 'Contactar'}
+        {isContacted ? 'like' : 'like'}
         {/* Si isContacted es true, muestra 'Contactado'; si no, muestra 'Contactar' */}
       </button>
     </div>
